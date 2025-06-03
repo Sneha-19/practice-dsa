@@ -1,6 +1,7 @@
 // Given an array, find the second largest number
 
 function secondLargest(arr) {
+    if(arr.length < 2) return null;
     let firstLargest = arr[0];
     let secondLargest = arr[0];
 
