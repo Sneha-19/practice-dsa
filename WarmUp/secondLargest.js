@@ -9,7 +9,8 @@ function secondLargest(arr) {
         if (ele > firstLargest) {
             secondLargest = firstLargest;
             firstLargest = ele;
-        } else if (ele > secondLargest) {
+        } else if (ele > secondLargest && ele != firstLargest) {
+            //ele != firstLargest to remove duplicates otherwise duplicates will be considered as first and second largest
             secondLargest = ele;
         }
     })
