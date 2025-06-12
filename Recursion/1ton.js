@@ -1,9 +1,19 @@
 // Print 1 to n using recursion
 
-function oneTon(n){
+function nToOne(n){
  if(n < 1) return;
  console.log(n)
- oneTon(--n)
+ nToOne(--n)
 }
 
-oneTon(10)
+nToOne(10)
+
+
+let n = 10;
+function oneTon(x) {
+  if(x > n) return;
+  console.log(x);
+  oneTon(++x);
+}
+
+oneTon(1)
